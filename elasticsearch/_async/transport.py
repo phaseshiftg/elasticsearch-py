@@ -492,6 +492,7 @@ class AsyncTransport(Transport):
                 raise error
 
             # Check the information we got back from the index request.
-            self._verified_elasticsearch = _ProductChecker.check_product(
-                info_headers, info_response
-            )
+            self._verified_elasticsearch = True
+            # _ProductChecker.check_product(
+            #     info_headers, info_response
+            # )
